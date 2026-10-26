@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <title>Unics téma</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>Unics téma</h1>
+    <p class="sub">A választás csak ebben a böngészőben tárolódik.</p>
+  </header>
+
+  <div id="perm" class="perm" hidden>
+    <p>A bővítménynek engedély kell az unics.szte.hu oldalhoz.</p>
+    <button id="perm-btn" type="button">Engedélyezés</button>
+  </div>
+
+  <h2 class="group">Színek</h2>
+  <ul id="themes" class="options" role="radiogroup" aria-label="Színtéma"></ul>
+
+  <h2 class="group">Stílus</h2>
+  <ul id="layouts" class="options" role="radiogroup" aria-label="Stílus"></ul>
+
+  <footer>
+    <a href="https://unics.szte.hu/Home" target="_blank" rel="noopener">Unics megnyitása</a>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

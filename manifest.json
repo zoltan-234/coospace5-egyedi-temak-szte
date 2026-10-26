@@ -1,0 +1,65 @@
+{
+  "manifest_version": 3,
+  "name": "Unics Themes",
+  "version": "0.5.8",
+  "description": "Választható designok az SZTE Unics (CooSpace) felületéhez. A választás helyben, a böngészőben tárolódik.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://unics.szte.hu/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://unics.szte.hu/*"
+      ],
+      "js": [
+        "content/jss-resolver.js",
+        "content/surface-tagger.js",
+        "content/apply-theme.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "themes/*.css",
+        "layouts/*.css",
+        "fonts/*.woff2"
+      ],
+      "matches": [
+        "https://unics.szte.hu/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Unics téma",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "unics-themes@zoltan-234",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      },
+      "update_url": "https://raw.githubusercontent.com/zoltan-234/coospace5-egyedi-temak-szte/main/updates.json"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}
