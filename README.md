@@ -3,7 +3,7 @@
 ![Unics Themes](assets/banner.png)
 
 **Válaszd ki, hogyan nézzen ki az SZTE Unics (CooSpace)!**
-18 színtéma · 5 stílus · egy kattintás · semmi adatgyűjtés
+18 színtéma · 5 stílus · egy kattintás
 
 [![Licenc: PolyForm Noncommercial](https://img.shields.io/badge/licenc-PolyForm%20Noncommercial-orange)](LICENSE)
 [![Legújabb kiadás](https://img.shields.io/github/v/release/zoltan-234/coospace5-egyedi-temak-szte?label=kiad%C3%A1s)](https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest)
