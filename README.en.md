@@ -3,7 +3,7 @@
 ![Unics Themes](assets/banner.png)
 
 **Choose how the University of Szeged's Unics (CooSpace) looks!**
-18 colour themes · 5 styles · one click · no data collection
+18 colour themes · 5 styles · one click
 
 [![Licence: PolyForm Noncommercial](https://img.shields.io/badge/licence-PolyForm%20Noncommercial-orange)](LICENSE)
 [![Latest release](https://img.shields.io/github/v/release/zoltan-234/coospace5-egyedi-temak-szte?label=release)](https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest)
