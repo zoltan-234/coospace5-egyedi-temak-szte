@@ -11,7 +11,7 @@ Verzió 0.5.8 · English version: GUIDE.md
 4. [Telepítés Firefoxban](#4-telepítés-firefoxban)
 5. [Telepítés Chrome-ban](#5-telepítés-chrome-ban)
 6. [Telepítés Edge-ben](#6-telepítés-edge-ben)
-7. [Telepítés Bravében](#7-telepítés-bravében)
+7. [Telepítés Brave-ben](#7-telepítés-brave-ben)
 8. [Használat](#8-használat)
 9. [Amikre figyelj](#9-amikre-figyelj)
 10. [Frissítés](#10-frissítés)
@@ -62,10 +62,15 @@ Minden kiadás a GitHub **Releases** oldalán található: `https://github.com/z
 
 1. Nyisd meg a fenti oldalt. Az **Assets** (Fájlok) listában két fájlt látsz.
 
-   > 🖼️ *[GH-01] A GitHub Releases oldal: itt tölthető le a két fájl*
+   ![A GitHub Releases oldal: itt tölthető le a két fájl](screenshots/GH-01.png)
+   *A GitHub Releases oldal: itt tölthető le a két fájl*
    
-2. **Firefoxhoz** az `.xpi` végű fájlt töltsd le (pl. `unics-themes-0.5.8.xpi`).
+2. **Firefox-hoz** az `.xpi` végű fájlt töltsd le (pl. `unics-themes-0.5.8.xpi`).
 3. **Chrome-hoz, Edge-hez és Brave-hez** a `…-chromium.zip` fájlt töltsd le.
+
+   ![A letöltött fájlok: az .xpi és a -chromium.zip](screenshots/GH-02.png)
+   *A letöltött fájlok: az .xpi és a -chromium.zip*
+   
 
 
 ## 4. Telepítés Firefoxban
@@ -73,27 +78,28 @@ Minden kiadás a GitHub **Releases** oldalán található: `https://github.com/z
 > ✅ **Ez a legkényelmesebb**  
 > A Firefox-verzió a Mozilla által **aláírt**, ezért egyszerűen telepíthető, tartósan megmarad, és magától frissül.
 
-1. Töltsd le az `.xpi` fájlt a Releases oldalról (lásd a 3. fejezetet).
-2. Nyisd meg a letöltött fájlt, vagy húzd rá a Firefox ablakára. Megjelenik egy kérdés: kattints a **Hozzáadás** gombra.
+1. Töltsd le az `.xpi` fájlt a Releases oldalról (lásd a 3. fejezetet): kattints a hivatkozásra, vagy nyisd meg a letöltött fájlt.
+2. A Firefox megkérdezi, engedélyezed-e a **github.com**-nak, hogy kiegészítőt telepítsen. Kattints a **Telepítés folytatása** gombra.
 
-   > 🖼️ *[FF-01] Firefox: a telepítés megerősítése (Hozzáadás gomb)*
+   ![Firefox: a github.com telepítési engedélye](screenshots/FF-00.png)
+   *Firefox: a github.com telepítési engedélye*
    
-3. Ellenőrizd: a `about:addons` oldalon az **Unics Themes** a bővítmények között látszik.
+3. Megjelenik az **Unics Themes hozzáadása** ablak. Itt látod, mit kér a bővítmény: csak az `unics.szte.hu` oldalon lévő adatok elérését, és hogy nem gyűjt adatot. Kattints a **Hozzáadás** gombra.
 
-   > 🖼️ *[FF-02] Firefox: a bővítmény a kiegészítők listájában*
+   ![Firefox: az Unics Themes hozzáadása, a kért engedélyekkel](screenshots/FF-01.png)
+   *Firefox: az Unics Themes hozzáadása, a kért engedélyekkel*
    
-4. Nyisd meg az Unics oldalt (`unics.szte.hu`), és kattints a bővítmény ikonjára. Firefoxban az oldalhoz való hozzáférést külön meg kell adni: nyomd meg a sárga dobozban az **Engedélyezés** gombot. Ez egyszeri lépés.
+4. Ellenőrizd: a `about:addons` oldalon az **Unics Themes** a bővítmények között látszik, bekapcsolva.
 
-   > 🖼️ *[FF-03] Firefox: az Engedélyezés gomb a popupban*
+   ![Firefox: a bővítmény a kiegészítők listájában](screenshots/FF-02.png)
+   *Firefox: a bővítmény a kiegészítők listájában*
    
-5. Opcionális: tűzd ki az ikont az eszköztárra, hogy mindig kéznél legyen (puzzle ikon, majd **Kitűzés az eszköztárra**).
+5. Adj hozzáférést az Unics oldalhoz (Firefoxban ezt külön meg kell tenni, egyszer): kattints jobb gombbal a bővítmény ikonjára, és válaszd a **Mindig engedélyezve a következőkön: unics.szte.hu** lehetőséget. Ugyanitt tűzheted ki az ikont az eszköztárra (**Rögzítés az eszköztárra**). A bővítmény popupjában is van egy **Engedélyezés** gomb, az ugyanezt teszi.
 
-   > 🖼️ *[FF-04] Firefox: a bővítmény kitűzése az eszköztárra*
+   ![Firefox: az ikon menüje: hozzáférés az Unics oldalhoz, kitűzés, eltávolítás](screenshots/FF-03.png)
+   *Firefox: az ikon menüje: hozzáférés az Unics oldalhoz, kitűzés, eltávolítás*
    
-6. Válassz színt és stílust a popupban. A változás azonnal látszik.
-
-   > 🖼️ *[FF-05] Firefox: az Unics oldal egy kiválasztott témával*
-   
+6. Nyisd meg az Unics oldalt, kattints az ikonra, és válassz színt és stílust. A változás azonnal látszik.
 
 > ℹ️ **Frissítés**  
 > A Firefox naponta egyszer ellenőrzi, van-e újabb verzió, és magától frissít. Azonnali kereséshez: `about:addons` → fogaskerék → **Bővítmények frissítéseinek keresése**.
@@ -104,35 +110,36 @@ Minden kiadás a GitHub **Releases** oldalán található: `https://github.com/z
 > ⚠️ **Fontos: a mappa a bővítmény helye**  
 > A Chrome a letöltött mappából olvassa a fájlokat, nem másolja át. Ezért a mappát **ne töröld és ne helyezd át**, különben a bővítmény leáll.
 
-1. Töltsd le a `…-chromium.zip` fájlt (3. fejezet), és **csomagold ki egy állandó helyre**, pl. `Dokumentumok\unics-themes`. Jobb klikk → **Összes kibontása**.
-2. Nyisd meg a kicsomagolt mappát: közvetlenül benne kell lennie a `manifest.json` fájlnak.
+1. Töltsd le a `…-chromium.zip` fájlt (3. fejezet), és **csomagold ki egy állandó helyre**, pl. `Dokumentumok\unics-themes`. Jobb klikk → **Összes kibontása**. A kicsomagolt mappában közvetlenül ott kell lennie a `manifest.json` fájlnak.
+2. Nyisd meg a bővítménykezelőt: a Chrome menüje (⋮) → **Bővítmények** → **Bővítmények kezelése**. (Vagy írd a címsorba: `chrome://extensions`.)
 
-   > 🖼️ *[GH-02] A kicsomagolt mappa: közvetlenül benne van a manifest.json*
+   ![Chrome: a menü → Bővítmények → Bővítmények kezelése](screenshots/CH-00.png)
+   *Chrome: a menü → Bővítmények → Bővítmények kezelése*
    
-3. Írd be a címsorba: `chrome://extensions`, és kapcsold be jobb felül a **Fejlesztői módot**.
+3. Kapcsold be jobb felül a **Fejlesztői módot**, majd kattints a **Kicsomagolt elemek betöltése** gombra.
 
-   > 🖼️ *[CH-01] Chrome: a bővítménykezelő, bekapcsolt fejlesztői móddal*
+   ![Chrome: a bővítménykezelő, bekapcsolt fejlesztői móddal és a betöltés gombbal](screenshots/CH-01.png)
+   *Chrome: a bővítménykezelő, bekapcsolt fejlesztői móddal és a betöltés gombbal*
    
-4. Kattints a **Kicsomagolt bővítmény betöltése** gombra.
+4. Válaszd ki a kicsomagolt mappát, és kattints a **Mappaválasztás** gombra.
 
-   > 🖼️ *[CH-02] Chrome: a „Kicsomagolt bővítmény betöltése” gomb*
+   ![A mappaválasztó ablak: válaszd ki a kicsomagolt mappát](screenshots/CH-02.png)
+   *A mappaválasztó ablak: válaszd ki a kicsomagolt mappát*
    
-5. Válaszd ki azt a mappát, amiben a `manifest.json` van, és kattints a **Mappa kiválasztása** gombra.
+5. Az **Unics Themes** megjelenik a listában, hibajelzés nélkül.
 
-   > 🖼️ *[CH-03] Chrome: a mappa kiválasztása*
+   ![Chrome: a betöltött bővítmény kártyája](screenshots/CH-03.png)
+   *Chrome: a betöltött bővítmény kártyája*
    
-6. Az **Unics Themes** megjelenik a listában, hibajelzés nélkül.
+6. Tűzd ki az ikont: puzzle ikon → az Unics Themes melletti tűzőcsap.
 
-   > 🖼️ *[CH-04] Chrome: a betöltött bővítmény kártyája*
+   ![Chrome: a bővítmény kitűzése az eszköztárra](screenshots/CH-04.png)
+   *Chrome: a bővítmény kitűzése az eszköztárra*
    
-7. Tűzd ki az ikont: puzzle ikon → az Unics Themes melletti tűzőcsap.
-
-   > 🖼️ *[CH-05] Chrome: kitűzés az eszköztárra*
-   
-8. Nyisd meg az Unics oldalt, kattints az ikonra, és válassz témát (lásd a 8. fejezetet).
+7. Nyisd meg az Unics oldalt, kattints az ikonra, és válassz témát (lásd a 8. fejezetet).
 
 > ℹ️ **Nem kell az „Engedélyezés” gomb**  
-> Chrome-ban, Edge-ben és Bravében az oldalhoz való hozzáférés telepítéskor már megvan, a Firefoxtól eltérően.
+> Chrome-ban, Edge-ben és Brave-ben az oldalhoz való hozzáférés telepítéskor már megvan, a Firefoxtól eltérően.
 
 
 ## 6. Telepítés Edge-ben
@@ -141,60 +148,64 @@ Minden kiadás a GitHub **Releases** oldalán található: `https://github.com/z
 > Az Edge is a kicsomagolt mappából olvassa a fájlokat. A mappát **ne töröld és ne helyezd át**.
 
 1. Töltsd le a `…-chromium.zip` fájlt (3. fejezet), és csomagold ki egy állandó helyre.
+2. Nyisd meg a bővítménykezelőt: az Edge menüje (⋯) → **Bővítmények** → **Bővítmények kezelése**. (Vagy: `edge://extensions`.)
 
-   > 🖼️ *[GH-02] A kicsomagolt mappa: közvetlenül benne van a manifest.json*
+   ![Edge: a menü → Bővítmények → Bővítmények kezelése](screenshots/ED-00.png)
+   *Edge: a menü → Bővítmények → Bővítmények kezelése*
    
-2. Írd be a címsorba: `edge://extensions`, és kapcsold be a bal oldali menüben a **Fejlesztői módot**.
+3. Kapcsold be a bal alsó sarokban a **Fejlesztői módot**, majd kattints a **Kicsomagolt bővítmény betöltése** gombra.
 
-   > 🖼️ *[ED-01] Edge: a bővítménykezelő, bekapcsolt fejlesztői móddal*
+   ![Edge: a bővítménykezelő, bekapcsolt fejlesztői móddal és a betöltés gombbal](screenshots/ED-01.png)
+   *Edge: a bővítménykezelő, bekapcsolt fejlesztői móddal és a betöltés gombbal*
    
-3. Kattints a **Kicsomagolt betöltése** gombra.
+4. Válaszd ki azt a mappát, amiben a `manifest.json` van (ugyanaz a mappaválasztó ablak, mint Chrome-ban).
 
-   > 🖼️ *[ED-02] Edge: a „Kicsomagolt betöltése” gomb*
-   
-4. Válaszd ki a mappát, amiben a `manifest.json` van.
-
-   > 🖼️ *[ED-03] Edge: a mappa kiválasztása*
+   ![A mappaválasztó ablak: válaszd ki a kicsomagolt mappát](screenshots/CH-02.png)
+   *A mappaválasztó ablak: válaszd ki a kicsomagolt mappát*
    
 5. Az **Unics Themes** megjelenik a listában, hibajelzés nélkül.
 
-   > 🖼️ *[ED-04] Edge: a betöltött bővítmény kártyája*
+   ![Edge: a betöltött bővítmény kártyája](screenshots/ED-02.png)
+   *Edge: a betöltött bővítmény kártyája*
    
-6. Tűzd ki az ikont az eszköztárra (Bővítmények menü → szem ikon az Unics Themes mellett).
+6. Tűzd ki az ikont az eszköztárra: Bővítmények (puzzle) menü → az Unics Themes melletti tűzőcsap.
 
-   > 🖼️ *[ED-05] Edge: kitűzés az eszköztárra*
+   ![Edge: kitűzés az eszköztárra és eltávolítás a bővítmények menüjéből](screenshots/ED-03.png)
+   *Edge: kitűzés az eszköztárra és eltávolítás a bővítmények menüjéből*
    
 7. Nyisd meg az Unics oldalt, és válassz témát (8. fejezet).
 
 
-## 7. Telepítés Bravében
+## 7. Telepítés Brave-ben
 
 > ⚠️ **Fontos: a mappa a bővítmény helye**  
 > A Brave is a kicsomagolt mappából olvassa a fájlokat. A mappát **ne töröld és ne helyezd át**.
 
 1. Töltsd le a `…-chromium.zip` fájlt (3. fejezet), és csomagold ki egy állandó helyre.
+2. Nyisd meg a bővítménykezelőt: a Brave menüje (☰) → **Bővítmények** → **Bővítmények kezelése**. (Vagy: `brave://extensions`.)
 
-   > 🖼️ *[GH-02] A kicsomagolt mappa: közvetlenül benne van a manifest.json*
+   ![Brave: a menü → Bővítmények → Bővítmények kezelése](screenshots/BR-00.png)
+   *Brave: a menü → Bővítmények → Bővítmények kezelése*
    
-2. Írd be a címsorba: `brave://extensions`, és kapcsold be a **Fejlesztői módot**.
+3. Kapcsold be jobb felül a **Fejlesztői módot**, majd kattints a **Kicsomagolt elemek betöltése** gombra.
 
-   > 🖼️ *[BR-01] Brave: a bővítménykezelő, bekapcsolt fejlesztői móddal*
+   ![Brave: a bővítménykezelő, bekapcsolt fejlesztői móddal és a betöltés gombbal](screenshots/BR-01.png)
+   *Brave: a bővítménykezelő, bekapcsolt fejlesztői móddal és a betöltés gombbal*
    
-3. Kattints a **Kicsomagolt bővítmény betöltése** gombra.
+4. Válaszd ki azt a mappát, amiben a `manifest.json` van (ugyanaz a mappaválasztó ablak, mint Chrome-ban).
 
-   > 🖼️ *[BR-02] Brave: a „Kicsomagolt bővítmény betöltése” gomb*
-   
-4. Válaszd ki a mappát, amiben a `manifest.json` van.
-
-   > 🖼️ *[BR-03] Brave: a mappa kiválasztása*
+   ![A mappaválasztó ablak: válaszd ki a kicsomagolt mappát](screenshots/CH-02.png)
+   *A mappaválasztó ablak: válaszd ki a kicsomagolt mappát*
    
 5. Az **Unics Themes** megjelenik a listában, hibajelzés nélkül.
 
-   > 🖼️ *[BR-04] Brave: a betöltött bővítmény kártyája*
+   ![Brave: a betöltött bővítmény kártyája](screenshots/BR-02.png)
+   *Brave: a betöltött bővítmény kártyája*
    
-6. Tűzd ki az ikont az eszköztárra (puzzle ikon → kitűzés).
+6. Tűzd ki az ikont az eszköztárra: puzzle ikon → az Unics Themes melletti tűzőcsap.
 
-   > 🖼️ *[BR-05] Brave: kitűzés az eszköztárra*
+   ![Brave: kitűzés az eszköztárra és eltávolítás](screenshots/BR-03.png)
+   *Brave: kitűzés az eszköztárra és eltávolítás*
    
 7. Nyisd meg az Unics oldalt, és válassz témát (8. fejezet).
 
@@ -206,26 +217,8 @@ Minden kiadás a GitHub **Releases** oldalán található: `https://github.com/z
 
 1. Nyisd meg az Unics oldalt, és kattints a bővítmény ikonjára.
 2. **Színek:** válassz a témák közül (Világos, Többszínű, Rózsaszín, Sötét). A kis előnézet mutatja a színeket.
-
-   > 🖼️ *[US-01] A popup: színtémák*
-   
 3. **Stílus:** legörgetve válassz formát: Klasszikus (az eredeti), Modern, Üveg, Szigetek vagy Brutalista.
-
-   > 🖼️ *[US-02] A popup: stílusok*
-   
 4. A kettő szabadon kombinálható, a változás azonnal látszik, és a böngésző bezárása után is megmarad.
-
-
-### Példák
-
-
-> 🖼️ *[US-03] Példa: Modern stílus, világos téma*
-
-
-> 🖼️ *[US-04] Példa: Üveg stílus, sötét téma*
-
-
-> 🖼️ *[US-05] Példa: Brutalista stílus*
 
 > ℹ️ **Vissza az eredetihez**  
 > Válaszd a **Világos → Eredeti** színt és a **Klasszikus** stílust: az oldal pontosan úgy néz ki, mint a bővítmény nélkül.
@@ -257,7 +250,7 @@ Minden kiadás a GitHub **Releases** oldalán található: `https://github.com/z
 
 | Mi a gond? | Megoldás |
 |---|---|
-| Nem változik az oldal kinézete | Firefoxban nyomd meg a popupban az **Engedélyezés** gombot. Nyomj F5-öt. Ellenőrizd, hogy a `unics.szte.hu` oldalon vagy-e. |
+| Nem változik az oldal kinézete | Firefoxban nyomd meg a popupban az **Engedélyezés** gombot, vagy az ikon jobb klikk menüjében válaszd a **Mindig engedélyezve a következőkön: unics.szte.hu** lehetőséget. Nyomj F5-öt. Ellenőrizd, hogy a `unics.szte.hu` oldalon vagy-e. |
 | Az Engedélyezés gomb nem tűnik el (Firefox) | Kattints rá újra, és a böngésző kérdésére válaszolj **Engedélyezés**-sel. Ha így sem megy, indítsd újra a Firefoxot. |
 | Újraindítás után eltűnt a bővítmény (Chrome/Edge/Brave) | Valószínűleg a kicsomagolt mappa törlődött vagy elmozdult. Csomagold ki újra egy állandó helyre, és töltsd be. |
 | Hibajelzés a bővítménykártyán | Nyisd meg a Hibák gombot, és küldd el a szöveget a GitHub Issues oldalon. Próbáld meg az Újratöltés gombot is. |
@@ -269,21 +262,25 @@ Minden kiadás a GitHub **Releases** oldalán található: `https://github.com/z
 
 Az eltávolítás után az oldal visszaáll az eredeti kinézetre, és a bővítmény minden adata törlődik a böngésződből.
 
-1. **Firefox:** `about:addons` → az Unics Themes melletti **…** → **Eltávolítás**.
+1. **Firefox:** jobb klikk a bővítmény ikonján → **Kiegészítő eltávolítása** (vagy `about:addons` → **…** → **Eltávolítás**).
 
-   > 🖼️ *[FF-06] Firefox: a bővítmény eltávolítása*
+   ![Firefox: az ikon menüje: hozzáférés az Unics oldalhoz, kitűzés, eltávolítás](screenshots/FF-03.png)
+   *Firefox: az ikon menüje: hozzáférés az Unics oldalhoz, kitűzés, eltávolítás*
    
-2. **Chrome:** `chrome://extensions` → az Unics Themes kártyán **Eltávolítás**.
+2. **Chrome:** puzzle ikon → az Unics Themes melletti **⋮** → **Eltávolítás a Chrome-ból** (vagy `chrome://extensions` → **Eltávolítás**).
 
-   > 🖼️ *[CH-06] Chrome: a bővítmény eltávolítása*
+   ![Chrome: a bővítmény eltávolítása](screenshots/CH-05.png)
+   *Chrome: a bővítmény eltávolítása*
    
-3. **Edge:** `edge://extensions` → **Eltávolítás**.
+3. **Edge:** Bővítmények (puzzle) menü → **⋯** → **Eltávolítás a Microsoft Edge-ből**.
 
-   > 🖼️ *[ED-06] Edge: a bővítmény eltávolítása*
+   ![Edge: kitűzés az eszköztárra és eltávolítás a bővítmények menüjéből](screenshots/ED-03.png)
+   *Edge: kitűzés az eszköztárra és eltávolítás a bővítmények menüjéből*
    
-4. **Brave:** `brave://extensions` → **Eltávolítás**.
+4. **Brave:** puzzle ikon → az Unics Themes melletti **⋮** → **Eltávolítás a Brave-ből**.
 
-   > 🖼️ *[BR-06] Brave: a bővítmény eltávolítása*
+   ![Brave: kitűzés az eszköztárra és eltávolítás](screenshots/BR-03.png)
+   *Brave: kitűzés az eszköztárra és eltávolítás*
    
 5. Chrome/Edge/Brave esetén ezután a kicsomagolt mappát is törölheted.
 

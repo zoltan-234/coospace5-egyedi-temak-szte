@@ -62,10 +62,15 @@ Every release is on the GitHub **Releases** page: `https://github.com/zoltan-234
 
 1. Open the page above. In the **Assets** list you will see two files.
 
-   > 🖼️ *[GH-01] The GitHub Releases page: the two downloadable files*
+   ![The GitHub Releases page: the two downloadable files](screenshots/GH-01.png)
+   *The GitHub Releases page: the two downloadable files*
    
 2. **For Firefox** download the file ending in `.xpi` (e.g. `unics-themes-0.5.8.xpi`).
 3. **For Chrome, Edge and Brave** download the `…-chromium.zip` file.
+
+   ![The downloaded files: the .xpi and the -chromium.zip](screenshots/GH-02.png)
+   *The downloaded files: the .xpi and the -chromium.zip*
+   
 
 
 ## 4. Installing in Firefox
@@ -73,27 +78,28 @@ Every release is on the GitHub **Releases** page: `https://github.com/zoltan-234
 > ✅ **This is the easiest one**  
 > The Firefox version is **signed** by Mozilla, so it installs simply, stays permanently and updates itself.
 
-1. Download the `.xpi` file from the Releases page (chapter 3).
-2. Open the downloaded file, or drag it onto the Firefox window. A prompt appears: click **Add**.
+1. Download the `.xpi` file from the Releases page (chapter 3): click the link, or open the downloaded file.
+2. Firefox asks whether to allow **github.com** to install an add-on. Click **Continue to Installation**.
 
-   > 🖼️ *[FF-01] Firefox: confirming the installation (Add button)*
+   ![Firefox: permission for github.com to install an add-on](screenshots/FF-00.png)
+   *Firefox: permission for github.com to install an add-on*
    
-3. Check: on `about:addons` the **Unics Themes** is listed among your extensions.
+3. The **Add Unics Themes** window appears. It shows what the extension asks for: access to data on `unics.szte.hu` only, and that it collects no data. Click **Add**.
 
-   > 🖼️ *[FF-02] Firefox: the add-on in the add-ons list*
+   ![Firefox: adding Unics Themes, with the permissions it asks for](screenshots/FF-01.png)
+   *Firefox: adding Unics Themes, with the permissions it asks for*
    
-4. Open the Unics site (`unics.szte.hu`) and click the extension icon. In Firefox, access to the site must be granted separately: press the **Allow** button in the yellow box. This is a one-time step.
+4. Check: on `about:addons` the **Unics Themes** is listed among your extensions, switched on.
 
-   > 🖼️ *[FF-03] Firefox: the Allow button in the popup*
+   ![Firefox: the add-on in the add-ons list](screenshots/FF-02.png)
+   *Firefox: the add-on in the add-ons list*
    
-5. Optional: pin the icon to the toolbar so it is always at hand (puzzle icon, then **Pin to Toolbar**).
+5. Grant access to the Unics site (Firefox requires this separately, once): right-click the extension icon and choose **Always allow on unics.szte.hu**. You can also pin the icon to the toolbar there (**Pin to Toolbar**). The extension popup also has an **Allow** button that does the same.
 
-   > 🖼️ *[FF-04] Firefox: pinning the add-on to the toolbar*
+   ![Firefox: the icon's menu: site access, pinning, removal](screenshots/FF-03.png)
+   *Firefox: the icon's menu: site access, pinning, removal*
    
-6. Choose a colour and a style in the popup. The change is instant.
-
-   > 🖼️ *[FF-05] Firefox: the Unics site with a theme applied*
-   
+6. Open the Unics site, click the icon and choose a colour and a style. The change is instant.
 
 > ℹ️ **Updates**  
 > Firefox checks once a day for a newer version and updates itself. To check right away: `about:addons` → gear icon → **Check for Updates**.
@@ -104,32 +110,33 @@ Every release is on the GitHub **Releases** page: `https://github.com/zoltan-234
 > ⚠️ **Important: the folder is the extension's home**  
 > Chrome reads the files from the downloaded folder instead of copying them. So **do not delete or move** the folder, otherwise the extension stops.
 
-1. Download the `…-chromium.zip` file (chapter 3) and **extract it to a permanent place**, e.g. `Documents\unics-themes`. Right-click → **Extract All**.
-2. Open the extracted folder: `manifest.json` must be directly inside it.
+1. Download the `…-chromium.zip` file (chapter 3) and **extract it to a permanent place**, e.g. `Documents\unics-themes`. Right-click → **Extract All**. `manifest.json` must be directly inside the extracted folder.
+2. Open the extensions page: Chrome menu (⋮) → **Extensions** → **Manage extensions**. (Or type `chrome://extensions`.)
 
-   > 🖼️ *[GH-02] The extracted folder: manifest.json is directly inside*
+   ![Chrome: menu → Extensions → Manage extensions](screenshots/CH-00.png)
+   *Chrome: menu → Extensions → Manage extensions*
    
-3. Type `chrome://extensions` into the address bar and switch on **Developer mode** in the top right.
+3. Switch on **Developer mode** in the top right, then click **Load unpacked**.
 
-   > 🖼️ *[CH-01] Chrome: the extensions page with Developer mode on*
+   ![Chrome: the extensions page with Developer mode on and the load button](screenshots/CH-01.png)
+   *Chrome: the extensions page with Developer mode on and the load button*
    
-4. Click **Load unpacked**.
+4. Choose the extracted folder and click **Select Folder**.
 
-   > 🖼️ *[CH-02] Chrome: the “Load unpacked” button*
+   ![The folder picker: choose the extracted folder](screenshots/CH-02.png)
+   *The folder picker: choose the extracted folder*
    
-5. Select the folder that contains `manifest.json` and click **Select Folder**.
+5. **Unics Themes** appears in the list, with no error.
 
-   > 🖼️ *[CH-03] Chrome: choosing the folder*
+   ![Chrome: the loaded extension card](screenshots/CH-03.png)
+   *Chrome: the loaded extension card*
    
-6. **Unics Themes** appears in the list, with no error.
+6. Pin the icon: puzzle icon → the pin next to Unics Themes.
 
-   > 🖼️ *[CH-04] Chrome: the loaded extension card*
+   ![Chrome: pinning the extension to the toolbar](screenshots/CH-04.png)
+   *Chrome: pinning the extension to the toolbar*
    
-7. Pin the icon: puzzle icon → the pin next to Unics Themes.
-
-   > 🖼️ *[CH-05] Chrome: pinning to the toolbar*
-   
-8. Open the Unics site, click the icon and choose a theme (chapter 8).
+7. Open the Unics site, click the icon and choose a theme (chapter 8).
 
 > ℹ️ **No “Allow” button needed**  
 > In Chrome, Edge and Brave, access to the site is already granted on install, unlike Firefox.
@@ -141,28 +148,30 @@ Every release is on the GitHub **Releases** page: `https://github.com/zoltan-234
 > Edge also reads the files from the extracted folder. **Do not delete or move** the folder.
 
 1. Download the `…-chromium.zip` file (chapter 3) and extract it to a permanent place.
+2. Open the extensions page: Edge menu (⋯) → **Extensions** → **Manage extensions**. (Or: `edge://extensions`.)
 
-   > 🖼️ *[GH-02] The extracted folder: manifest.json is directly inside*
+   ![Edge: menu → Extensions → Manage extensions](screenshots/ED-00.png)
+   *Edge: menu → Extensions → Manage extensions*
    
-2. Type `edge://extensions` into the address bar and switch on **Developer mode** in the left menu.
+3. Switch on **Developer mode** in the bottom left, then click **Load unpacked**.
 
-   > 🖼️ *[ED-01] Edge: the extensions page with Developer mode on*
+   ![Edge: the extensions page with Developer mode on and the load button](screenshots/ED-01.png)
+   *Edge: the extensions page with Developer mode on and the load button*
    
-3. Click **Load unpacked**.
+4. Choose the folder that contains `manifest.json` (the same folder picker as in Chrome).
 
-   > 🖼️ *[ED-02] Edge: the “Load unpacked” button*
-   
-4. Select the folder that contains `manifest.json`.
-
-   > 🖼️ *[ED-03] Edge: choosing the folder*
+   ![The folder picker: choose the extracted folder](screenshots/CH-02.png)
+   *The folder picker: choose the extracted folder*
    
 5. **Unics Themes** appears in the list, with no error.
 
-   > 🖼️ *[ED-04] Edge: the loaded extension card*
+   ![Edge: the loaded extension card](screenshots/ED-02.png)
+   *Edge: the loaded extension card*
    
-6. Pin the icon to the toolbar (Extensions menu → eye icon next to Unics Themes).
+6. Pin the icon to the toolbar: Extensions (puzzle) menu → the pin next to Unics Themes.
 
-   > 🖼️ *[ED-05] Edge: pinning to the toolbar*
+   ![Edge: pinning to the toolbar and removing from the extensions menu](screenshots/ED-03.png)
+   *Edge: pinning to the toolbar and removing from the extensions menu*
    
 7. Open the Unics site and choose a theme (chapter 8).
 
@@ -173,28 +182,30 @@ Every release is on the GitHub **Releases** page: `https://github.com/zoltan-234
 > Brave also reads the files from the extracted folder. **Do not delete or move** the folder.
 
 1. Download the `…-chromium.zip` file (chapter 3) and extract it to a permanent place.
+2. Open the extensions page: Brave menu (☰) → **Extensions** → **Manage extensions**. (Or: `brave://extensions`.)
 
-   > 🖼️ *[GH-02] The extracted folder: manifest.json is directly inside*
+   ![Brave: menu → Extensions → Manage extensions](screenshots/BR-00.png)
+   *Brave: menu → Extensions → Manage extensions*
    
-2. Type `brave://extensions` into the address bar and switch on **Developer mode**.
+3. Switch on **Developer mode** in the top right, then click **Load unpacked**.
 
-   > 🖼️ *[BR-01] Brave: the extensions page with Developer mode on*
+   ![Brave: the extensions page with Developer mode on and the load button](screenshots/BR-01.png)
+   *Brave: the extensions page with Developer mode on and the load button*
    
-3. Click **Load unpacked**.
+4. Choose the folder that contains `manifest.json` (the same folder picker as in Chrome).
 
-   > 🖼️ *[BR-02] Brave: the “Load unpacked” button*
-   
-4. Select the folder that contains `manifest.json`.
-
-   > 🖼️ *[BR-03] Brave: choosing the folder*
+   ![The folder picker: choose the extracted folder](screenshots/CH-02.png)
+   *The folder picker: choose the extracted folder*
    
 5. **Unics Themes** appears in the list, with no error.
 
-   > 🖼️ *[BR-04] Brave: the loaded extension card*
+   ![Brave: the loaded extension card](screenshots/BR-02.png)
+   *Brave: the loaded extension card*
    
-6. Pin the icon to the toolbar (puzzle icon → pin).
+6. Pin the icon to the toolbar: puzzle icon → the pin next to Unics Themes.
 
-   > 🖼️ *[BR-05] Brave: pinning to the toolbar*
+   ![Brave: pinning to the toolbar and removal](screenshots/BR-03.png)
+   *Brave: pinning to the toolbar and removal*
    
 7. Open the Unics site and choose a theme (chapter 8).
 
@@ -206,26 +217,8 @@ Every release is on the GitHub **Releases** page: `https://github.com/zoltan-234
 
 1. Open the Unics site and click the extension icon.
 2. **Colours:** pick a theme (Light, Colourful, Pink, Dark). The small preview shows the colours.
-
-   > 🖼️ *[US-01] The popup: colour themes*
-   
 3. **Style:** scroll down and pick a shape: Classic (the original), Modern, Glass, Islands or Brutalist.
-
-   > 🖼️ *[US-02] The popup: styles*
-   
 4. The two combine freely, the change is instant, and it survives closing the browser.
-
-
-### Examples
-
-
-> 🖼️ *[US-03] Example: Modern style, light theme*
-
-
-> 🖼️ *[US-04] Example: Glass style, dark theme*
-
-
-> 🖼️ *[US-05] Example: Brutalist style*
 
 > ℹ️ **Back to the original**  
 > Choose **Light → Eredeti** as the colour and **Klasszikus** as the style: the page looks exactly as it does without the extension.
@@ -257,7 +250,7 @@ Every release is on the GitHub **Releases** page: `https://github.com/zoltan-234
 
 | What is wrong? | Fix |
 |---|---|
-| The page does not change | In Firefox press **Allow** in the popup. Press F5. Check that you are on `unics.szte.hu`. |
+| The page does not change | In Firefox press **Allow** in the popup, or choose **Always allow on unics.szte.hu** in the icon's right-click menu. Press F5. Check that you are on `unics.szte.hu`. |
 | The Allow button does not go away (Firefox) | Click it again and answer the browser prompt with **Allow**. If it still fails, restart Firefox. |
 | The extension vanished after a restart (Chrome/Edge/Brave) | The extracted folder was probably deleted or moved. Extract it again to a permanent place and load it. |
 | Error on the extension card | Open the Errors button and send the text via GitHub Issues. Also try the Reload button. |
@@ -269,21 +262,25 @@ Every release is on the GitHub **Releases** page: `https://github.com/zoltan-234
 
 After removal the page returns to its original look and all extension data is deleted from your browser.
 
-1. **Firefox:** `about:addons` → the **…** next to Unics Themes → **Remove**.
+1. **Firefox:** right-click the extension icon → **Remove Extension** (or `about:addons` → **…** → **Remove**).
 
-   > 🖼️ *[FF-06] Firefox: removing the add-on*
+   ![Firefox: the icon's menu: site access, pinning, removal](screenshots/FF-03.png)
+   *Firefox: the icon's menu: site access, pinning, removal*
    
-2. **Chrome:** `chrome://extensions` → **Remove** on the Unics Themes card.
+2. **Chrome:** puzzle icon → the **⋮** next to Unics Themes → **Remove from Chrome** (or `chrome://extensions` → **Remove**).
 
-   > 🖼️ *[CH-06] Chrome: removing the extension*
+   ![Chrome: removing the extension](screenshots/CH-05.png)
+   *Chrome: removing the extension*
    
-3. **Edge:** `edge://extensions` → **Remove**.
+3. **Edge:** Extensions (puzzle) menu → **⋯** → **Remove from Microsoft Edge**.
 
-   > 🖼️ *[ED-06] Edge: removing the extension*
+   ![Edge: pinning to the toolbar and removing from the extensions menu](screenshots/ED-03.png)
+   *Edge: pinning to the toolbar and removing from the extensions menu*
    
-4. **Brave:** `brave://extensions` → **Remove**.
+4. **Brave:** puzzle icon → the **⋮** next to Unics Themes → **Remove from Brave**.
 
-   > 🖼️ *[BR-06] Brave: removing the extension*
+   ![Brave: pinning to the toolbar and removal](screenshots/BR-03.png)
+   *Brave: pinning to the toolbar and removal*
    
 5. For Chrome/Edge/Brave you can then delete the extracted folder too.
 

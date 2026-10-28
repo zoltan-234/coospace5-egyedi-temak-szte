@@ -1,5 +1,8 @@
 # Változásnapló
 
+## 0.5.9
+- Belépő oldal: minden témában és stílusban egységes, jól olvasható kinézet (`themes/login.css`); csak a gomb színe követi a témát; a mezők felirata (Felhasználónév, Jelszó) a mezőben látszik.
+
 ## 0.5.8
 - Klasszikus nézetben a fejléc bannerképét a téma színátmenete váltja le.
 

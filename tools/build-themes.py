@@ -204,7 +204,7 @@ for tid, name, dark, group, raw in THEMES:
     css += "}\n"
     open(f"themes/{tid}.css", "w").write(f"/* {name} – generálva: tools/build-themes.py */\n" + css)
 
-    e = {"id": tid, "name": name, "group": group, "css": ["themes/base.css", f"themes/{tid}.css"],
+    e = {"id": tid, "name": name, "group": group, "css": ["themes/base.css", f"themes/{tid}.css", "themes/login.css"],
          "preview": [p["bg"], p["surface"], p["pal"][0], p["pal"][1], p["sidebar"]]}
     if p["headergrad"] != "none":
         e["previewHeader"] = p["headergrad"]

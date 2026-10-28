@@ -9,7 +9,6 @@ Fájlnév: `<AZONOSÍTÓ>.png` (vagy .jpg/.webp) ebbe a mappába. Ezután: `pyth
 | `FF-01` | A Firefoxban a letöltött .xpi megnyitása után felugró ablak 'Hozzáadja a(z) Unics Themes kiegészítőt?' – a Hozzáadás gombbal együtt. |
 | `FF-02` | about:addons oldal, a Bővítmények között az Unics Themes látszódjon, bekapcsolt állapotban. |
 | `FF-03` | Az Unics oldalon (unics.szte.hu) a bővítmény ikonjára kattintva megnyíló popup, a sárga 'Engedélyezés' dobozzal együtt (még az engedélyezés ELŐTT). |
-| `FF-04` | A Firefox eszköztárán a puzzle (Bővítmények) menü megnyitva, az Unics Themes mellett a 'Kitűzés az eszköztárra' lehetőség látszódjon. |
 | `FF-05` | Az Unics főoldala (Áttekintés) egy látványos témával és stílussal – szebb legyen, mint az eredeti. |
 | `FF-06` | about:addons, az Unics Themes melletti három pontos (…) menü megnyitva, az 'Eltávolítás' sor látszódjon. |
 | `CH-01` | chrome://extensions oldal, jobb felül a 'Fejlesztői mód' kapcsoló BEkapcsolva, jelöld be. |
