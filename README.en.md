@@ -7,9 +7,10 @@
 
 [![Licence: PolyForm Noncommercial](https://img.shields.io/badge/licence-PolyForm%20Noncommercial-orange)](LICENSE)
 [![Latest release](https://img.shields.io/github/v/release/zoltan-234/coospace5-egyedi-temak-szte?label=release)](https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest)
-![Browsers](https://img.shields.io/badge/browsers-Firefox%20%C2%B7%20Chrome%20%C2%B7%20Edge%20%C2%B7%20Brave-0f766e)
 
 **[⬇️ Download](https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest)** · **[📖 Installation guide (PDF)](docs/guide-en.pdf)** · **[🇭🇺 Magyar](README.md)** · **[🐞 Report an issue](https://github.com/zoltan-234/coospace5-egyedi-temak-szte/issues/new/choose)**
+
+<a href="https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest"><img alt="Firefox" src="https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=firefoxbrowser&logoColor=white"></a> <a href="https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest"><img alt="Chrome" src="https://img.shields.io/badge/Chrome-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white"></a> <a href="https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest"><img alt="Edge" src="https://img.shields.io/badge/Edge-0078D7?style=for-the-badge&logo=microsoftedge&logoColor=white"></a> <a href="https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest"><img alt="Brave" src="https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&logo=brave&logoColor=white"></a> <a href="https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest"><img alt="Opera" src="https://img.shields.io/badge/Opera-FF1B2D?style=for-the-badge&logo=opera&logoColor=white"></a> <a href="https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest"><img alt="Vivaldi" src="https://img.shields.io/badge/Vivaldi-EF3939?style=for-the-badge&logo=vivaldi&logoColor=white"></a>
 
 </div>
 
@@ -53,8 +54,11 @@ Download the latest release: **[Releases](https://github.com/zoltan-234/coospace
 | **Chrome** | `…-chromium.zip` | Extract to a **permanent** folder → `chrome://extensions` → **Developer mode** → **Load unpacked** |
 | **Edge** | `…-chromium.zip` | Same: `edge://extensions` |
 | **Brave** | `…-chromium.zip` | Same: `brave://extensions` |
+| **Other Chromium-based browsers** (Vivaldi, Opera, Opera GX, Chromium) | `…-chromium.zip` | Same: `vivaldi://extensions`, `opera://extensions`, `chrome://extensions` |
 
 > ⚠️ On Chrome, Edge and Brave **do not delete or move** the extracted folder, or the extension stops.
+
+> Other Chromium-based browsers (Vivaldi, Opera, etc.) should work the same way, but I have not tested them. If one has a problem, please open an [Issue](../../issues).
 
 📖 Step-by-step illustrated guide: **[guide-en.pdf](docs/guide-en.pdf)** ([Markdown](docs/GUIDE.md)) · **[utmutato-hu.pdf](docs/utmutato-hu.pdf)** (Hungarian)
 

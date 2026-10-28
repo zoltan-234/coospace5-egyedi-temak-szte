@@ -7,9 +7,10 @@
 
 [![Licenc: PolyForm Noncommercial](https://img.shields.io/badge/licenc-PolyForm%20Noncommercial-orange)](LICENSE)
 [![Legújabb kiadás](https://img.shields.io/github/v/release/zoltan-234/coospace5-egyedi-temak-szte?label=kiad%C3%A1s)](https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest)
-![Böngészők](https://img.shields.io/badge/b%C3%B6ng%C3%A9sz%C5%91k-Firefox%20%C2%B7%20Chrome%20%C2%B7%20Edge%20%C2%B7%20Brave-0f766e)
 
 **[⬇️ Letöltés](https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest)** · **[📖 Telepítési útmutató (PDF)](docs/utmutato-hu.pdf)** · **[🇬🇧 English](README.en.md)** · **[🐞 Hibabejelentés](https://github.com/zoltan-234/coospace5-egyedi-temak-szte/issues/new/choose)**
+
+<a href="https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest"><img alt="Firefox" src="https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=firefoxbrowser&logoColor=white"></a> <a href="https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest"><img alt="Chrome" src="https://img.shields.io/badge/Chrome-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white"></a> <a href="https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest"><img alt="Edge" src="https://img.shields.io/badge/Edge-0078D7?style=for-the-badge&logo=microsoftedge&logoColor=white"></a> <a href="https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest"><img alt="Brave" src="https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&logo=brave&logoColor=white"></a> <a href="https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest"><img alt="Opera" src="https://img.shields.io/badge/Opera-FF1B2D?style=for-the-badge&logo=opera&logoColor=white"></a> <a href="https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest"><img alt="Vivaldi" src="https://img.shields.io/badge/Vivaldi-EF3939?style=for-the-badge&logo=vivaldi&logoColor=white"></a>
 
 </div>
 
@@ -53,8 +54,11 @@ Töltsd le a legújabb kiadást: **[Releases](https://github.com/zoltan-234/coos
 | **Chrome** | `…-chromium.zip` | Csomagold ki egy **állandó** mappába → `chrome://extensions` → **Fejlesztői mód** → **Kicsomagolt bővítmény betöltése** |
 | **Edge** | `…-chromium.zip` | Ugyanígy: `edge://extensions` |
 | **Brave** | `…-chromium.zip` | Ugyanígy: `brave://extensions` |
+| **Más Chromium-alapú böngészők** (Vivaldi, Opera, Opera GX, Chromium) | `…-chromium.zip` | Ugyanígy: `vivaldi://extensions`, `opera://extensions`, `chrome://extensions` |
 
 > ⚠️ Chrome, Edge és Brave esetén a kicsomagolt mappát **ne töröld és ne helyezd át**, különben a bővítmény leáll.
+
+> A Chromium-alapú böngészők (Vivaldi, Opera stb.) elvileg ugyanígy működnek, de ezeket nem teszteltem. Ha valamelyiknél gond van, jelezd egy [Issue](../../issues)-ban.
 
 📖 Képes, lépésről lépésre útmutató: **[utmutato-hu.pdf](docs/utmutato-hu.pdf)** ([Markdown](docs/UTMUTATO.md)) · **[guide-en.pdf](docs/guide-en.pdf)** ([Markdown](docs/GUIDE.md))
 
