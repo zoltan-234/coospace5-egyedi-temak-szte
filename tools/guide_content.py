@@ -111,7 +111,8 @@ CHAPTERS_HU = [
    ("Nyisd meg az Unics oldalt, és kattints a bővítmény ikonjára.", []),
    ("<b>Színek:</b> válassz a témák közül (Világos, Többszínű, Rózsaszín, Sötét). A kis előnézet mutatja a színeket.", []),
    ("<b>Stílus:</b> legörgetve válassz formát: Klasszikus (az eredeti), Modern, Üveg, Szigetek vagy Brutalista.", []),
-   ("A kettő szabadon kombinálható, a változás azonnal látszik, és a böngésző bezárása után is megmarad.", [])]),
+   ("A kettő szabadon kombinálható, a változás azonnal látszik, és a böngésző bezárása után is megmarad.", []),
+   ("<b>Funkciók:</b> a popup alján három kapcsoló van (induláskor a Színterek oldalra; csoportok alapmódja; emlékezés a csoportokra). Mindegyik mellett egy <b>ⓘ</b> jel magyarázza, mit csinál. Alapból mind ki van kapcsolva.", [])]),
  ("note", "info", "Vissza az eredetihez", "Válaszd a <b>Világos → Eredeti</b> színt és a <b>Klasszikus</b> stílust: az oldal pontosan úgy néz ki, mint a bővítmény nélkül."),
 
  ("h1", "figyelj", "9. Amikre figyelj"),
@@ -239,7 +240,8 @@ CHAPTERS_EN = [
    ("Open the Unics site and click the extension icon.", []),
    ("<b>Colours:</b> pick a theme (Light, Colourful, Pink, Dark). The small preview shows the colours.", []),
    ("<b>Style:</b> scroll down and pick a shape: Classic (the original), Modern, Glass, Islands or Brutalist.", []),
-   ("The two combine freely, the change is instant, and it survives closing the browser.", [])]),
+   ("The two combine freely, the change is instant, and it survives closing the browser.", []),
+   ("<b>Features:</b> at the bottom of the popup there are three switches (open the Scenes page on start; default mode of the groups; remember groups). Each has an <b>ⓘ</b> mark that explains what it does. All are off by default.", [])]),
  ("note", "info", "Back to the original", "Choose <b>Light → Eredeti</b> as the colour and <b>Klasszikus</b> as the style: the page looks exactly as it does without the extension."),
 
  ("h1", "figyelj", "9. Things to watch out for"),

@@ -140,7 +140,42 @@ async function setupPermission() {
   });
 }
 
+// ---------- Funkciók (content/features.js olvassa) ----------
+async function setupFeatures() {
+  const KEYS = ["unicsStartScenes", "unicsGroupMode", "unicsGroupRemember"];
+  const s = await api.storage.local.get(KEYS);
+  const start = document.getElementById("f-start");
+  const mode = document.getElementById("f-mode");
+  const remember = document.getElementById("f-remember");
+  start.checked = !!s.unicsStartScenes;
+  mode.value = s.unicsGroupMode || "original";
+  remember.checked = !!s.unicsGroupRemember;
+
+  start.addEventListener("change", () => api.storage.local.set({ unicsStartScenes: start.checked }));
+  mode.addEventListener("change", () => api.storage.local.set({ unicsGroupMode: mode.value }));
+  remember.addEventListener("change", () => api.storage.local.set({ unicsGroupRemember: remember.checked }));
+
+  // ⓘ jelek: a kis i betűre kattintva megjelenik/eltűnik a magyarázat
+  document.querySelectorAll(".info").forEach((btn) => {
+    btn.setAttribute("aria-expanded", "false");
+    btn.addEventListener("click", () => {
+      const tip = document.getElementById(btn.dataset.tip);
+      tip.hidden = !tip.hidden;
+      btn.setAttribute("aria-expanded", String(!tip.hidden));
+    });
+  });
+
+  const forget = document.getElementById("f-forget");
+  forget.addEventListener("click", async () => {
+    await api.storage.local.remove("unicsGroups");
+    forget.textContent = "Törölve";
+    forget.classList.add("done");
+    setTimeout(() => { forget.textContent = "Megjegyzett csoportok törlése"; forget.classList.remove("done"); }, 1500);
+  });
+}
+
 (async () => {
+  await setupFeatures();
   const stored = await api.storage.local.get(GROUPS.map((g) => g.key));
   for (const group of GROUPS) {
     const items = await loadJson(group.source);

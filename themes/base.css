@@ -378,3 +378,11 @@ html[data-unics-theme] [data-ut~="term-btn"],
 html[data-unics-theme] [data-ut~="term-btn"] * {
   color: var(--ut-fg) !important;
 }
+
+/* ---------- Színterek: csoportfejléc szürke nyíl-doboza ----------
+ * A content/features.js jelöli meg (data-ut-arrow), melyik álelem a szürke doboz. */
+html[data-unics-theme] h2[data-ut-arrow="before"]::before,
+html[data-unics-theme] h2[data-ut-arrow="after"]::after {
+  background-color: var(--ut-accent) !important;
+  color: var(--ut-accent-fg) !important;
+}

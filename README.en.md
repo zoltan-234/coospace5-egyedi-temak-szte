@@ -38,7 +38,7 @@ A shape layer independent of the colour theme; combine it with any colour.
 
 **Light:** Eredeti (original) · Unics friss · Világos modern · Rosé Pine Dawn
 **Colourful:** Pasztell · Naplemente · Aurora · Neon
-**Pink:** Sakura · Rózsakert · Bubblegum
+**Pink:** Sakura · Sakura (virág, flower-pattern header) · Rózsakert · Bubblegum
 **Dark:** Midnight · Nord · Catppuccin Mocha · Dracula · Gruvbox · Rosé Pine · AMOLED black
 
 Every theme gets a 5-colour palette, which colours the menu icons, the term-button dots, the home-page box headers and the calendar events. Text contrast is checked by the generator (WCAG 4.5:1).

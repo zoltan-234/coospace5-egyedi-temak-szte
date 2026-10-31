@@ -38,7 +38,7 @@ A **Klasszikus** stílus az Unics eredeti formáit tartja meg, csak a színeket 
 
 **Világos:** Eredeti · Unics friss · Világos modern · Rosé Pine Dawn
 **Többszínű:** Pasztell · Naplemente · Aurora · Neon
-**Rózsaszín:** Sakura · Rózsakert · Bubblegum
+**Rózsaszín:** Sakura · Sakura (virág) · Rózsakert · Bubblegum
 **Sötét:** Midnight · Nord · Catppuccin Mocha · Dracula · Gruvbox · Rosé Pine · AMOLED fekete
 
 Minden téma 5 színű palettát kap: ettől színesek a menüikonok, a félév-gombok pöttyei, a kezdőlap dobozainak fejlécei és a naptáresemények. A szövegek kontrasztját a generátor ellenőrzi (WCAG 4.5:1).

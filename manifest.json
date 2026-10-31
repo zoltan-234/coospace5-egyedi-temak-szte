@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Unics Themes",
-  "version": "0.5.9",
+  "version": "0.6.1",
   "description": "Választható designok az SZTE Unics (CooSpace) felületéhez. A választás helyben, a böngészőben tárolódik.",
   "permissions": [
     "storage"
@@ -17,7 +17,8 @@
       "js": [
         "content/jss-resolver.js",
         "content/surface-tagger.js",
-        "content/apply-theme.js"
+        "content/apply-theme.js",
+        "content/features.js"
       ],
       "run_at": "document_start",
       "all_frames": true
@@ -27,6 +28,7 @@
     {
       "resources": [
         "themes/*.css",
+        "themes/*.jpg",
         "layouts/*.css",
         "fonts/*.woff2"
       ],

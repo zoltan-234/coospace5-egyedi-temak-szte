@@ -72,6 +72,17 @@ THEMES = [
     accent="#c2255c", accentfg="#ffffff", accent2="#6741d9", accent2fg="#ffffff", star="#a86410", success="#2b8a3e",
     headerbg="#ffd1dc", headerfg="#3a1426", headergrad="linear-gradient(110deg, #ffc2d4 0%, #ffdde1 50%, #e5dbff 100%)",
     pal=["#c2255c", "#7048e8", "#e8590c", "#0c8599", "#d6336c"])),
+  ("sakura-virag", "Sakura (virág)", False, "Rózsaszín", dict(
+    bg="#fff4f7", sidebar="#ffe3ec", sidebarfg="#5a1f36", sidebarmuted="#844460",
+    surface="#ffffff", surface2="#ffe9f0", rowalt="#fff8fa", input="#ffffff",
+    border="#f6d3df", fg="#4a2233", muted="#7f4a63", heading="#3a1426",
+    accent="#c2255c", accentfg="#ffffff", accent2="#6741d9", accent2fg="#ffffff", star="#a86410", success="#2b8a3e",
+    headerbg="#ffe3ec", headerfg="#3a1426",
+    # A fejléc háttere a virágmintás kép, fehéres fátyollal (hogy a sötét felirat olvasható maradjon).
+    headergrad="linear-gradient(rgba(255, 244, 247, 0.58), rgba(255, 244, 247, 0.58))",
+    previewheader="linear-gradient(110deg, #ffc2d4 0%, #ffe3ec 100%)",
+    headerimg=True,
+    pal=["#c2255c", "#7048e8", "#e8590c", "#0c8599", "#d6336c"])),
   ("rosegarden", "Rózsakert", False, "Rózsaszín", dict(
     bg="#fbf6f1", sidebar="#5b1a43", sidebarfg="#ffe9f4", sidebarmuted="#e0aecb",
     surface="#ffffff", surface2="#f8ecef", rowalt="#fdf9f7", input="#ffffff",
@@ -202,12 +213,21 @@ for tid, name, dark, group, raw in THEMES:
     for k, v in extra.items():
         css += f"  --ut-{k}: {v};\n"
     css += "}\n"
+    if p.get("headerimg"):
+        # A kép url()-je ebben a fájlban áll (nem változóban), mert a változó url()-ját
+        # a felhasználó stíluslapjához képest oldaná fel a böngésző, és a layouts/ mappából nem találná.
+        sel = f'html[data-unics-theme="{tid}"][data-unics-theme="{tid}"][data-unics-theme="{tid}"] #header'
+        css += (f'{sel} {{\n'
+                f'  background-image: {p["headergrad"]}, url("{tid}.jpg") !important;\n'
+                f'  background-size: auto, 720px auto !important;\n'
+                f'  background-position: 0 0, center top !important;\n'
+                f'  background-repeat: no-repeat, repeat !important;\n}}\n')
     open(f"themes/{tid}.css", "w").write(f"/* {name} – generálva: tools/build-themes.py */\n" + css)
 
     e = {"id": tid, "name": name, "group": group, "css": ["themes/base.css", f"themes/{tid}.css", "themes/login.css"],
          "preview": [p["bg"], p["surface"], p["pal"][0], p["pal"][1], p["sidebar"]]}
     if p["headergrad"] != "none":
-        e["previewHeader"] = p["headergrad"]
+        e["previewHeader"] = p.get("previewheader", p["headergrad"])
     if dark:
         e["dark"] = True
     entries.append(e)

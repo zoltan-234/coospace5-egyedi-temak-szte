@@ -1,5 +1,13 @@
 # Változásnapló
 
+## 0.6.1
+- Új téma: **Sakura (virág)**: a Sakura színei, a fejléc háttere virágmintás kép (fehéres fátyollal, hogy a felirat olvasható maradjon).
+
+## 0.6.0
+- Új **Funkciók** rész a popupban (ⓘ magyarázattal): induláskor a Színterek oldalra ugrás; csoportok alapmódja (mind csukva / mind nyitva / csak az aktuális félév nyitva) és emlékezés név szerint.
+- Színterek: a csoportfejléc szürke nyíl-doboza a téma akcentszínét kapja.
+- Összecsukott oldalsáv: az ikonok minden stílusban (Modern, Üveg, Szigetek, Brutalista) rendesen látszanak.
+
 ## 0.5.9
 - Belépő oldal: minden témában és stílusban egységes, jól olvasható kinézet (`themes/login.css`); csak a gomb színe követi a témát; a mezők felirata (Felhasználónév, Jelszó) a mezőben látszik.
 

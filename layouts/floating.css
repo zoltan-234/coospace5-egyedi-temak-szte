@@ -193,6 +193,29 @@ html[data-unics-layout="floating"] aside#left > ul > li.current > a::before {
   font-weight: 600;
 }
 
+/* Összecsukott oldalsáv (65 px): az ikonok ne vágódjanak le.
+   A html[data-unics-collapsed] jelzést a content/features.js adja. */
+html[data-unics-layout="floating"][data-unics-collapsed] aside#left > ul > li {
+  margin: 2px 6px !important;
+}
+html[data-unics-layout="floating"][data-unics-collapsed] aside#left > ul > li > a {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 0 !important;           /* a felirat nem kell, csak az ikon */
+  overflow: visible !important;
+}
+html[data-unics-layout="floating"][data-unics-collapsed] aside#left > ul > li > a::before {
+  font-size: 24px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  transform: none !important;
+}
+
 /* Kedvencek almenü */
 html[data-unics-layout="floating"] aside#left li.showfavs ul li {
   border-radius: var(--m-r-sm);
