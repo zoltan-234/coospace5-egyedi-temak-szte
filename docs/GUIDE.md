@@ -1,7 +1,7 @@
 # Unics Themes – installation guide
 
 Custom themes for the University of Szeged's Unics (CooSpace)  
-Version 0.5.8 · Magyar verzió: UTMUTATO.md
+Version 0.6.0 · Magyar verzió: UTMUTATO.md
 
 ## Contents
 
@@ -219,6 +219,7 @@ Every release is on the GitHub **Releases** page: `https://github.com/zoltan-234
 2. **Colours:** pick a theme (Light, Colourful, Pink, Dark). The small preview shows the colours.
 3. **Style:** scroll down and pick a shape: Classic (the original), Modern, Glass, Islands or Brutalist.
 4. The two combine freely, the change is instant, and it survives closing the browser.
+5. **Features:** at the bottom of the popup there are three switches (open the Scenes page on start; default mode of the groups; remember groups). Each has an **ⓘ** mark that explains what it does. All are off by default.
 
 > ℹ️ **Back to the original**  
 > Choose **Light → Eredeti** as the colour and **Klasszikus** as the style: the page looks exactly as it does without the extension.

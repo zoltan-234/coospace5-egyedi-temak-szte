@@ -43,6 +43,18 @@ A shape layer independent of the colour theme; combine it with any colour.
 
 Every theme gets a 5-colour palette, which colours the menu icons, the term-button dots, the home-page box headers and the calendar events. Text contrast is checked by the generator (WCAG 4.5:1).
 
+## Features
+
+Besides themes and styles, the extension popup has a few small convenience settings (**Funkciók** section; each has an ⓘ mark that explains what it does). All are off by default, so the page stays unchanged until you switch one on.
+
+| Feature | What it does |
+|---|---|
+| **Open the Scenes page on start** | After login it takes you straight to the Scenes (Színterek) page, whatever page you land on. It jumps only once per browser tab, after that you can go anywhere. |
+| **Groups on the Scenes page** | Choose whether the “Állandó” and the term groups load **all closed**, **all open** or **only the current term open**. |
+| **Remember groups** | What you open or close yourself (e.g. you close only “Állandó”) is remembered by name and loaded that way next time. It beats the default mode. The remembered groups can be cleared with one button. |
+
+Colour themes also recolour the grey arrow box of the Scenes group headers, and the icons show properly in the collapsed sidebar in every style.
+
 ## Installation
 
 Download the latest release: **[Releases](https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest)**

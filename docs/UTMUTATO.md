@@ -1,7 +1,7 @@
 # Unics Themes – telepítési útmutató
 
 Egyedi témák az SZTE Unics (CooSpace) felületéhez  
-Verzió 0.5.8 · English version: GUIDE.md
+Verzió 0.6.0 · English version: GUIDE.md
 
 ## Tartalom
 
@@ -219,6 +219,7 @@ Minden kiadás a GitHub **Releases** oldalán található: `https://github.com/z
 2. **Színek:** válassz a témák közül (Világos, Többszínű, Rózsaszín, Sötét). A kis előnézet mutatja a színeket.
 3. **Stílus:** legörgetve válassz formát: Klasszikus (az eredeti), Modern, Üveg, Szigetek vagy Brutalista.
 4. A kettő szabadon kombinálható, a változás azonnal látszik, és a böngésző bezárása után is megmarad.
+5. **Funkciók:** a popup alján három kapcsoló van (induláskor a Színterek oldalra; csoportok alapmódja; emlékezés a csoportokra). Mindegyik mellett egy **ⓘ** jel magyarázza, mit csinál. Alapból mind ki van kapcsolva.
 
 > ℹ️ **Vissza az eredetihez**  
 > Válaszd a **Világos → Eredeti** színt és a **Klasszikus** stílust: az oldal pontosan úgy néz ki, mint a bővítmény nélkül.

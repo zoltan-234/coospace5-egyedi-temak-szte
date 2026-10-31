@@ -43,6 +43,18 @@ A **Klasszikus** stílus az Unics eredeti formáit tartja meg, csak a színeket 
 
 Minden téma 5 színű palettát kap: ettől színesek a menüikonok, a félév-gombok pöttyei, a kezdőlap dobozainak fejlécei és a naptáresemények. A szövegek kontrasztját a generátor ellenőrzi (WCAG 4.5:1).
 
+## Funkciók
+
+A témákon és stílusokon túl néhány apró kényelmi beállítás is van a bővítmény popupjában (**Funkciók** rész, mindegyik mellett egy ⓘ jel magyarázza, mit csinál). Alapból mind ki van kapcsolva, ilyenkor az oldal nem változik.
+
+| Funkció | Mit csinál |
+|---|---|
+| **Induláskor a Színterek oldalra** | Bejelentkezés után rögtön a Színterek oldalra visz, bármelyik oldalon is landolnál. Csak egyszer ugrik böngészőfülenként, utána bárhová el lehet menni. |
+| **Csoportok a Színtereken** | Beállítható, hogy az „Állandó” és a félév-csoportok betöltéskor **mind csukva**, **mind nyitva** vagy **csak az aktuális félév nyitva** legyenek. |
+| **Emlékezz a csoportokra** | Amit te kinyitsz vagy becsukol (pl. csak az „Állandó”-t csukod be), azt név szerint megjegyzi, és legközelebb így tölti be. Ez erősebb az alapmódnál. A megjegyzett csoportok egy gombbal törölhetők. |
+
+A színtémák a Színterek csoportfejlécének szürke nyíl-dobozát is átszínezik, az oldalsáv összecsukott állapotában pedig minden stílusban rendesen látszanak az ikonok.
+
 ## Telepítés
 
 Töltsd le a legújabb kiadást: **[Releases](https://github.com/zoltan-234/coospace5-egyedi-temak-szte/releases/latest)**
@@ -77,7 +89,7 @@ Válaszd a **Világos → Eredeti** színt és a **Klasszikus** stílust. Vagy k
 
 <details><summary><b>Miért kell Firefoxban az „Engedélyezés” gomb?</b></summary>
 
-A Firefox alapból nem adja meg a bővítményeknek az oldalhoz való hozzáférést, azt egyszer meg kell erősíteni. Chrome-ban, Edge-ben és Bravében ez telepítéskor megvan.
+A Firefox alapból nem adja meg a bővítményeknek az oldalhoz való hozzáférést, azt egyszer meg kell erősíteni. Chrome-ban, Edge-ben és Brave-ben ez telepítéskor megvan.
 </details>
 
 <details><summary><b>Valami rosszul néz ki</b></summary>
@@ -94,8 +106,8 @@ Nem. Független, nem hivatalos projekt, nem áll kapcsolatban az SZTE-vel vagy a
 
 ```
 manifest.json              MV3, közös Firefox + Chromium
-content/                   téma betöltése, jss-feloldó, felület-jelölő
-popup/                     témaválasztó felület
+content/                   téma betöltése, jss-feloldó, felület-jelölő, funkciók (features.js)
+popup/                     témaválasztó és funkció-beállító felület
 themes/ , themes.json      színtémák (a build-themes.py generálja)
 layouts/ , layouts.json    stílusok (a modern.css az alap, a többi src/-ből generálódik)
 fonts/                     Inter és Manrope (OFL licenc)
