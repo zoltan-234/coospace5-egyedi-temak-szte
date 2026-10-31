@@ -12,7 +12,7 @@
   const SEMESTER = /^\d{4}\/\d{2}\/\d+$/;
 
   const cfg = { startScenes: false, mode: "original", remember: false, groups: {} };
-  const applied = new Set(); // melyik csoportnévre alkalmaztuk már az alapmódot ezen az oldalbetöltésen
+  let applied = new WeakSet(); // melyik fejléc-elemre alkalmaztuk már a szabályt (új elem = újrarajzolt csoport → újra alkalmazzuk)
   let scheduled = false;
   let resizeObs = null;
   let observedMenu = null;
@@ -92,8 +92,8 @@
     const first = list.map(nameOf).find((n) => SEMESTER.test(n));
     for (const h of list) {
       const name = nameOf(h);
-      if (!name || applied.has(name)) continue;
-      applied.add(name);
+      if (!name || applied.has(h)) continue;
+      applied.add(h);
       const want = wanted(name, first);
       if (!want) continue;
       // Kis várakozás: a ReactCollapse animációja ne zavarja a mérést.
@@ -161,8 +161,8 @@
       const prevMode = cfg.mode;
       readCfg(res);
       // Alapmód változott: a csoportok újra az új szabály szerint álljanak be.
-      if (changes.unicsGroupMode || (changes.unicsGroupRemember && !changes.unicsGroups)) applied.clear();
-      if (changes.unicsGroupMode && prevMode !== cfg.mode) applied.clear();
+      if (changes.unicsGroupMode || (changes.unicsGroupRemember && !changes.unicsGroups)) applied = new WeakSet();
+      if (changes.unicsGroupMode && prevMode !== cfg.mode) applied = new WeakSet();
       schedule();
     });
   });

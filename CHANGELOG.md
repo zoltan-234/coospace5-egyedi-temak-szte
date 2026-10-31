@@ -1,5 +1,8 @@
 # Változásnapló
 
+## 0.6.2
+- Csoportok (Színterek): a beállítás minden újrarajzolás után újra érvényesül (szinter megnyitása és visszalépés, fülváltás), nem csak az oldal első betöltésekor.
+
 ## 0.6.1
 - Új téma: **Sakura (virág)**: a Sakura színei, a fejléc háttere virágmintás kép (fehéres fátyollal, hogy a felirat olvasható maradjon).
 
